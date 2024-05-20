@@ -1,0 +1,2 @@
+.header{box-shadow:0 0 5px 0 rgba(0,0,0,.6);padding:16px}.header__nav{align-items:center;display:flex;flex-direction:row;gap:20px;justify-content:center;width:100%}@media screen and (min-width:1024px){.header__nav{gap:60px}}.header__item{list-style-type:none}.header__link{color:#101828;font-weight:600;text-decoration:none}.header__link.active{color:#e44848;font-weight:600}
+/*# sourceMappingURL=785.77f480e8.chunk.css.map*/

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_test_task_camper=self.webpackChunkreact_test_task_camper||[]).push([[99],{4099:function(e,t,s){s(2791);t.Z=s.p+"static/media/icons.52f7f5ee42e22b000255753656b01a54.svg"}}]);
+//# sourceMappingURL=99.f76c9d8f.chunk.js.map
