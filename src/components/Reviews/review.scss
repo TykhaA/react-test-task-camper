@@ -1,13 +1,35 @@
-.review {
-  &__list {
-    list-style: none;
-    .title {
+@use 'style/variables.scss' as *;
+.reviews {
+  margin-top: 24px;
+  &_user {
+    display: flex;
+    align-items: center;
+    &_avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 60px;
+      width: 60px;
+      height: 60px;
+      background: $bg-item;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 125%;
+      color: $corp-color;
+    }
+    &_info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 16px;
+    }
+    &_name {
       font-weight: 600;
       font-size: 18px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
-    .description {
-      font-size: 12px;
-    }
+  }
+  &_text {
+    margin-top: 16px;
+    font-size: 16px;
   }
 }

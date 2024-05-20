@@ -1,4 +1,4 @@
-import { Outlet, useParams } from 'react-router-dom';
+import { Outlet, useNavigate, useParams } from 'react-router-dom';
 import './camper-details.scss';
 import { getCamperDeatailApi } from 'api/requests';
 import { useEffect, useState } from 'react';
@@ -12,6 +12,7 @@ const CamperDetails = () => {
   const { id } = useParams();
   const [item, setItem] = useState({});
   const [tab, setTab] = useState('Features');
+  const navigate = useNavigate();
 
   useEffect(() => {
     id &&
@@ -24,10 +25,14 @@ const CamperDetails = () => {
     if (e.target !== e.currentTarget) setTab(e.target.innerHTML);
   };
 
+  const close = () => {
+    navigate('/catalog');
+  };
+
   return (
     <>
       <Modal className="modal">
-        <button className="modal__btn" type="button">
+        <button onClick={close} className="modal__btn" type="button">
           <svg width="32" height="32">
             <use href={sprite + '#icon-cross'}></use>
           </svg>
@@ -47,7 +52,7 @@ const CamperDetails = () => {
             {item.location}
           </span>
         </div>
-        <div className="list-info__title">€{item.price}</div>
+        <div className="list-info__title">€{item.price?.toFixed(2)}</div>
         <div className="gallery">
           {item.gallery?.map(img => (
             <img src={img} alt={img} key={img} />

@@ -19,8 +19,8 @@ const List = ({ list }) => {
               <div className="list-info__title">
                 {elem.name}
                 <div className="price-wrap">
-                  <span>€{elem.price}</span>
-                  <button className="favorite active" type="button">
+                  <span>€{elem.price?.toFixed(2)}</span>
+                  <button className="favorite " type="button">
                     <svg width="25" height="24">
                       <use href={sprite + '#icon-like'}></use>
                     </svg>
