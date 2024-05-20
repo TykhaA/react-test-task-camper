@@ -1,0 +1,67 @@
+@use 'style/variables.scss' as *;
+.form {
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: baseline;
+
+  &_title {
+    font-weight: 600;
+    font-size: 20px;
+    color: $main;
+  }
+  &_subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: $text;
+    margin-bottom: 24px;
+  }
+}
+.wrap_field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+.field {
+  border-radius: 10px;
+  padding: 18px;
+  border: 1px solid $inputs;
+  font-size: 16px;
+  color: rgba(16, 24, 40, 0.6);
+  background: $inputs;
+
+  &_textarea {
+    resize: unset;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+.btn {
+  padding: 6px 12px;
+  background-color: #ffff;
+  border-radius: 8px;
+  border: 1px solid #cccc;
+  cursor: pointer;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container .react-datepicker__calendar-icon {
+  right: 14px;
+  top: 13px;
+}
+.react-datepicker__view-calendar-icon input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 18px;
+  border: 1px solid $inputs;
+  font-size: 16px;
+  color: rgba(16, 24, 40, 0.6);
+  background: $inputs;
+}

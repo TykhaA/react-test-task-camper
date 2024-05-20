@@ -1,0 +1,29 @@
+@use 'style/variables.scss' as *;
+
+.header {
+  padding: 16px 16px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    @media screen and (min-width: 1024px) {
+      gap: 60px;
+    }
+  }
+  &__item {
+    list-style-type: none;
+  }
+  &__link {
+    text-decoration: none;
+    color: $main;
+    font-weight: 600;
+  }
+  &__link.active {
+    color: $corp-color;
+    font-weight: 600;
+  }
+}

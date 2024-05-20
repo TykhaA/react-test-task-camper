@@ -1,0 +1,17 @@
+@use 'style/variables.scss' as *;
+.deatails {
+  margin-top: auto;
+  &_title {
+    font-weight: 600;
+    font-size: 20px;
+    color: $main;
+  }
+  &_item {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px;
+    color: $main;
+    margin-bottom: 15px;
+  }
+}

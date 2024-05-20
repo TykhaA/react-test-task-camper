@@ -1,0 +1,15 @@
+@use 'style/variables.scss' as *;
+
+.input {
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 18px 18px 18px 18px;
+  background-color: $bg-item;
+  border: none;
+  color: $main;
+  width: 100%;
+  &_icon {
+    padding-left: 44px;
+  }
+}

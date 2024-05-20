@@ -1,0 +1,79 @@
+@use 'style/variables.scss' as *;
+
+.filters-section {
+  width: 100%;
+  @media screen and (min-width: 1024px) {
+    width: 30%;
+  }
+  .form-filters {
+    &__field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 32px;
+      label {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: $main;
+        opacity: 0.6;
+      }
+      .input-wrapper {
+        position: relative;
+        svg {
+          position: absolute;
+          left: 18px;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+    }
+    &__sub-title {
+      font-weight: 600;
+      font-size: 20px;
+      margin-top: 14px;
+    }
+    &__title {
+      font-weight: 500;
+      font-size: 16px;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    &__hr {
+      border-bottom: 1px solid $border;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      border-top: none;
+    }
+    &__btn {
+      margin-top: 44px;
+    }
+    input[type='checkbox'],
+    input[type='radio'] {
+      display: none;
+    }
+
+    input[type='checkbox'] + label,
+    input[type='radio'] + label {
+      border: 1px solid $border;
+      border-radius: 10px;
+      padding: 0px 5px;
+      width: 115px;
+      height: 95px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 8px;
+      transition: color ease 0.3s;
+    }
+
+    input:checked + label {
+      border: 1px solid $corp-color;
+    }
+  }
+}

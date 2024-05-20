@@ -1,0 +1,36 @@
+@use 'style/variables.scss' as *;
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 200px;
+  line-height: 1;
+
+  &.color {
+    background-color: $corp-color;
+    color: #fff;
+    padding: 20px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: #fff;
+    &:hover {
+      background-color: #d84343;
+    }
+  }
+  &.transparent {
+    border: 1px solid rgba(71, 84, 103, 0.2);
+    border-radius: 200px;
+    padding: 19px 32px;
+    &:hover {
+      border: 1px solid #e44848;
+    }
+  }
+  &.send {
+    padding: 16px 60px;
+    margin-top: 14px;
+  }
+}
